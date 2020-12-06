@@ -1,0 +1,91 @@
+
+.sort {
+    display: flex;
+    padding: 38px 0px;
+    &__paragraph {
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-left: 48px;
+    }
+
+    &__name {
+        h5 {
+            
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        width: 15px;
+        height: 9px;
+        margin-left: 14px;
+    }
+}
+.select {
+    position: relative;
+    margin-left: 48px;
+    span {
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.select.is-active .select__body {
+	display: block;}
+
+.select__header {
+	cursor: pointer;
+    display: flex;
+}
+.select-price__current, .select-age__current {
+	font-size: 18px;
+	line-height: 24px;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	margin-left: 14px;
+	text-align: center;
+}
+
+.select__body {
+	border: 1px solid #cccccc;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+    top: 100%;
+    z-index: 100;
+    background-color: #ffffff;
+    margin-top: 10px;
+    width: 200px;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__item:hover {
+	background-color: #f2f2f2;
+}
+@media (max-width: 768px) { 
+    .select {
+        margin-left: 0;
+    }
+ }

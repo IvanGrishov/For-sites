@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'David Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('David Libre'), local('DavidLibre-Regular'), url(https://fonts.gstatic.com/s/davidlibre/v5/snfus0W_99N64iuYSvp4W_l8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'David Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('David Libre Medium'), local('DavidLibre-Medium'), url(https://fonts.gstatic.com/s/davidlibre/v5/snfzs0W_99N64iuYSvp4W8GIw7qb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'David Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('David Libre Bold'), local('DavidLibre-Bold'), url(https://fonts.gstatic.com/s/davidlibre/v5/snfzs0W_99N64iuYSvp4W8HAxbqb.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: 'David Libre', serif;
+  letter-spacing: 1px;
+  font-size: 60px;
+}
+h5 {
+  margin-bottom: 0;
+}
+.container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.logo-title {
+  margin-bottom: 20px;
+}
+.name-prof {
+  position: relative;
+  font-weight: 400;
+  padding: 25px 0;
+}
+.name-prof::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 0;
+  background-color: #fff;
+}
+.wrapper {
+  box-shadow: 9px 32px 71px 0px rgba(0, 0, 0, 0.5);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b49b63;
+  min-width: 200px;
+  padding: 40px;
+}
+.name {
+  color: #ffffff;
+}
+.img-photo {
+  width: 180px;
+  border-radius: 50%;
+}
+.photo {
+  position: relative;
+  border-radius: 50%;
+}
+.photo::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 2;
+}
+.left-block {
+  background: #ffffff;
+  padding: 60px 40px;
+}
+.right-block {
+  padding-top: 40px;
+  background: #43464e;
+  padding: 60px 40px;
+}
+.title {
+  font-family: 'David Libre', serif;
+  letter-spacing: 1px;
+  position: relative;
+  background: #b49b63;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #b49b63;
+  text-transform: uppercase;
+  padding: 10px;
+  word-wrap: break-word;
+}
+.row {
+  margin: 0;
+}
+.title::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #b49b63;
+  background: transparent;
+  z-index: 2;
+}
+.work-li {
+  position: relative;
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.work-li::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 10px;
+  top: 9px;
+  border-radius: 50%;
+  background-color: #b49b63;
+}
+.personal-li {
+  position: relative;
+  list-style: none;
+  color: #EDEDED;
+  margin-top: 25px;
+  padding-left: 15px;
+}
+.wrap-block:not(:last-child) {
+  margin-bottom: 40px;
+}
+.soc-icons {
+  margin-top: 25px;
+}
+.fa {
+  font-size: 30px !important;
+  color: #b49b63;
+  padding-left: 15px;
+}
+.soc-li {
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column !important;
+    padding: 30px 15px;
+  }
+  .left-block {
+    padding: 30px 15px;
+  }
+  .right-block {
+    padding: 30px 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 767px) {
+  .photo {
+    margin-right: 50px;
+  }
+}
+.date-span {
+  font-weight: 500;
+}
+.vk-link li {
+  transition: 0.3s;
+}
+.vk-link:hover {
+  text-decoration: none;
+}
+.vk-link:hover li {
+  opacity: 0.6;
+}
